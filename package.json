@@ -27,7 +27,6 @@
     ]
   },
   "dependencies": {
-    "@prisma/cli": "latest",
     "@prisma/client": "latest",
     "blitz": "0.17.0",
     "react": "experimental",
@@ -49,6 +48,7 @@
     "lint-staged": "10.2.10",
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
+    "prisma": "2.24.0",
     "typescript": "4.1.5"
   },
   "private": true
