@@ -3,69 +3,26 @@ import { Head, Link } from "blitz"
 const Home = () => (
   <div className="container">
     <Head>
-      <title>blitzjs</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>NFTspace</title>
+      <link rel="icon" href="/logo.png" />
     </Head>
 
     <main>
       <div className="logo">
-        <img src="/logo.png" alt="blitz.js" />
-      </div>
-      <p>1. Run this command in your terminal:</p>
-      <pre>
-        <code>blitz generate all project name:string</code>
-      </pre>
-      <p>2. Then run this command:</p>
-      <pre>
-        <code>blitz db migrate</code>
-      </pre>
-
-      <p>
-        3. Go to{" "}
-        <Link href="/projects">
-          <a>/projects</a>
-        </Link>
-      </p>
-      <div className="buttons">
-        <a
-          className="button"
-          href="https://github.com/blitz-js/blitz/blob/master/USER_GUIDE.md?utm_source=blitz-new&utm_medium=app-template&utm_campaign=blitz-new"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Documentation
-        </a>
-        <a
-          className="button-outline"
-          href="https://github.com/blitz-js/blitz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github Repo
-        </a>
-        <a
-          className="button-outline"
-          href="https://slack.blitzjs.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Slack Community
-        </a>
+        <h1>NFTSPACE</h1>
+        <img src="/logo.png" alt="nftspace" />
       </div>
     </main>
-
     <footer>
-      <a
-        href="https://blitzjs.com?utm_source=blitz-new&utm_medium=app-template&utm_campaign=blitz-new"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by Blitz.js
+      <a href="https://metastash.xyz" target="_blank" rel="noopener noreferrer">
+        metastash
       </a>
     </footer>
 
     <style jsx>{`
       .container {
+        background-color: #120f16;
+        color: #e0e0e0;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -74,6 +31,7 @@ const Home = () => (
       }
 
       main {
+        background-color: #120f16;
         padding: 5rem 0;
         flex: 1;
         display: flex;
@@ -83,17 +41,17 @@ const Home = () => (
       }
 
       main p {
+        font-weight: 600;
         font-size: 1.2rem;
       }
 
       footer {
         width: 100%;
-        height: 60px;
-        border-top: 1px solid #eaeaea;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #45009d;
+        background-color: #3b2d66;
       }
 
       footer a {
@@ -103,16 +61,27 @@ const Home = () => (
       }
 
       footer a {
-        color: #f4f4f4;
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: #e0e0e0;
         text-decoration: none;
       }
 
       .logo {
-        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .logo h1 {
+        margin-left: 15px;
+        font-weight: 700;
       }
 
       .logo img {
-        width: 300px;
+        height: 55px;
+        width: 55px;
       }
 
       .buttons {
@@ -123,14 +92,14 @@ const Home = () => (
       }
 
       a.button {
-        background-color: #6700eb;
+        background-color: #cd284c;
         padding: 1rem 2rem;
-        color: #f4f4f4;
+        color: #e0e0e0;
         text-align: center;
       }
 
       a.button:hover {
-        background-color: #45009d;
+        background-color: #cd284c;
       }
 
       a.button-outline {
@@ -143,17 +112,6 @@ const Home = () => (
       a.button-outline:hover {
         border-color: #45009d;
         color: #45009d;
-      }
-
-      pre {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-      }
-      code {
-        font-size: 0.9rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-          Bitstream Vera Sans Mono, Courier New, monospace;
       }
 
       .grid {
@@ -175,14 +133,14 @@ const Home = () => (
     `}</style>
 
     <style jsx global>{`
-      @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap");
+      @import url("https://rsms.me/inter/inter.css");
 
       html,
       body {
         padding: 0;
         margin: 0;
-        font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+          Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       }
 
       * {
